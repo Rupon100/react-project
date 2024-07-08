@@ -5,7 +5,7 @@ const App = () => {
 
   const [selected, setSelected] = useState(null);
   const toggle = (getCurrentId) => {
-     setSelected(getCurrentId);
+     setSelected(getCurrentId  === selected ? null : getCurrentId);
   }
   return (
     <div className="h-screen flex justify-center items-center">
